@@ -13,13 +13,18 @@ app = Flask(__name__)
 
 
 def get_popular_movies():
-    popular_movies = pd.read_csv('/datasets/popularmovies.csv')
+    popular_movies = pd.read_csv('popularmovies.csv')
     return list(popular_movies['id'].head(10))
 
+def get_all_movies():
+    all_movies = pd.read_csv('popularmovies.csv')
+    return list(all_movies['title'])
 
-@app.route('/')
+
+@app.route('/',methods=['POST',"GET"])
 def index():
-    return render_template('index.html')
+    AllMovies = get_all_movies()
+    return render_template('index.html',movies=AllMovies)
 
 @app.route('/about')
 def about():
