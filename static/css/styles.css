@@ -1,0 +1,73 @@
+.topheader
+{
+    background-color: #032541;
+    font-weight: 600;
+}
+
+.jumb1
+{
+    font-weight: 1000;
+}
+
+.jumb2
+{
+    font-weight: 800;
+}
+
+.jumbotron
+{
+    background-color: #015f84;
+    min-height: 250px;
+}
+
+.jumbrow
+{
+    padding-top: 50px;
+}
+
+/* searchbar style */
+.form-group {
+    margin:0;
+    padding:20px ;
+
+}
+
+.form-control {
+  padding: 0px 10px 0 20px;
+  margin-top: 10px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 500;
+    border: 2px solid #555;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height:60px;
+    height: auto;
+    border-radius: 50px 0  0 50px !important;
+}
+.form-control :focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: transparent;
+
+    }
+
+#searchbtn
+{ 
+   border:0;
+  padding: 0px 10px;
+  margin-top: 10px;
+  color: #fff;
+  background:#1ad0b1;
+  font-size: 27px;
+  font-weight: 500;
+    border: 2px solid #555;
+    border-left: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height:60px;
+    height: auto;
+    border-radius: 0px 50px 50px 0px !important;
+}
+
+/* searchbar style end */
